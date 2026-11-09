@@ -19,7 +19,7 @@ A precision-engineered suite of `Engine.ini` performance profiles for **Wutherin
   - [Preset 3: MEDIUM (GTX 1050 Ti / GTX 1650, 4GB VRAM)](#preset-3-medium-gtx-1050-ti--gtx-1650-4gb-vram)
   - [Preset 4: HIGH (RTX 2060 / 3060 / 4060, 6GB-8GB VRAM)](#preset-4-high-rtx-2060--3060--4060-6gb-8gb-vram)
   - [Preset 5: VERY HIGH (RTX 3070 / 3080 / 4070, 8GB-12GB VRAM)](#preset-5-very-high-rtx-3070--3080--4070-8gb-12gb-vram)
-  - [Preset 6: ULTRA (WARNING: Flagship Hardware Melter)](#preset-6-ultra-warning-flagship-hardware-melter)
+  - [Preset 6: ULTRA EXTREME (WARNING: Flagship Hardware Melter)](#preset-6-ultra-extreme-warning-flagship-hardware-melter)
 - [System Requirements](#system-requirements)
 - [Installation Methods](#installation-methods)
   - [Method 1: Automated Script (Recommended)](#method-1-automated-script-recommended)
@@ -47,12 +47,12 @@ Each profile targets a distinct balance between draw call efficiency, texture st
 
 | Profile Directory | Target Hardware Class | Rendering Features | Resolution Scale | Target Framerate |
 | :--- | :--- | :--- | :--- | :--- |
-| `CONFIG ULTRA LOW` | Dual/Quad Core, 4-8GB RAM, Intel HD / UHD | Shadows OFF, Foliage OFF, Fog OFF, Minimal Particles | 65% + Sharpening | 30 - 60 FPS |
-| `CONFIG LOW` | 4-Core CPU, 8GB RAM, iGPU 2GB VRAM | 1 Cascade (512p), Fog OFF, 1000MB Texture Pool | 85% + Sharpening | 45 - 60 FPS |
-| `CONFIG MED` | 4-6 Core, 8-16GB RAM, Dedicated 4GB VRAM | 2 Cascades (1024p), Light AO/SSR, 75% Density | 100% Native | 60 FPS Stable |
-| `CONFIG HIGH` | 6+ Core, 16GB RAM, Dedicated 6-8GB VRAM | 3 Cascades (2048p), Volumetric Fog, AO Level 2 | 100% Native | 60 - 120 FPS |
-| `CONFIG VERY HIGH` | 8+ Core, 16-32GB RAM, Dedicated 8-12GB VRAM | 4 Cascades (3072p), Dense Fog Grid, 150% Distance | 100% Native | 120+ FPS |
-| `CONFIG ULTRA (WARNING)` | Flagship Rigs (RTX 4080/4090, RX 7900 XTX) | 6 Cascades (4096p), 250% Foliage, Locked LOD 0 | 125% Supersampling | Uncapped / Cinematic |
+| `01 - CONFIG ULTRA LOW` | Dual/Quad Core, 4-8GB RAM, Intel HD / UHD | Shadows OFF, Foliage OFF, Fog OFF, Minimal Particles | 65% + Sharpening | 30 - 60 FPS |
+| `02 - CONFIG LOW` | 4-Core CPU, 8GB RAM, iGPU 2GB VRAM | 1 Cascade (512p), Fog OFF, 1000MB Texture Pool | 85% + Sharpening | 45 - 60 FPS |
+| `03 - CONFIG MED` | 4-6 Core, 8-16GB RAM, Dedicated 4GB VRAM | 2 Cascades (1024p), Light AO/SSR, 75% Density | 100% Native | 60 FPS Stable |
+| `04 - CONFIG HIGH` | 6+ Core, 16GB RAM, Dedicated 6-8GB VRAM | 3 Cascades (2048p), Volumetric Fog, AO Level 2 | 100% Native | 60 - 120 FPS |
+| `05 - CONFIG VERY HIGH` | 8+ Core, 16-32GB RAM, Dedicated 8-12GB VRAM | 4 Cascades (3072p), Dense Fog Grid, 150% Distance | 100% Native | 120+ FPS |
+| `06 - CONFIG ULTRA EXTREME (WARNING)` | Flagship Rigs (RTX 4080/4090, RX 7900 XTX) | 6 Cascades (4096p), 250% Foliage, Locked LOD 0 | 125% Supersampling | Uncapped / Cinematic |
 
 ---
 
@@ -93,7 +93,7 @@ Enthusiast-tier fidelity calibrated for high refresh rate displays (120Hz - 165H
 - **World Rendering**: View distance extended to 150%, foliage density increased to 125%.
 - **Texture Cache**: Allocated 6500MB texture pool.
 
-### Preset 6: ULTRA (WARNING: Flagship Hardware Melter)
+### Preset 6: ULTRA EXTREME (WARNING: Flagship Hardware Melter)
 An uncapped, hardware-stressing profile engineered exclusively for flagship hardware (RTX 4080, RTX 4090, RX 7900 XTX) with 32GB+ system RAM.
 - **Shadows**: 4096x4096p 4K buffers with 6 cascading splits across a 300% shadow projection distance.
 - **Polygon Locking**: Mesh degradation disabled (`r.StaticMeshLODDistanceScale=0.1`, `r.SkeletalMeshLODBias=-2`), permanently forcing highest-resolution LOD 0 geometry across all rendering distances.
@@ -142,7 +142,7 @@ To install configurations manually:
    *(Alternative install path: `<GameDirectory>\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor\`)*
 
 2. Create a backup of your existing `Engine.ini` file.
-3. Open your chosen profile folder (e.g. `CONFIG LOW`), open `engine.ini`, and copy its entire contents.
+3. Open your chosen profile folder (e.g. `02 - CONFIG LOW`), open `engine.ini`, and copy its entire contents.
 4. Paste the copied contents into the target `Engine.ini` and save the file.
 5. **Mandatory Step**:
    - Right-click `Engine.ini` -> select **Properties**.
@@ -200,7 +200,7 @@ Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)<
 ## Safety and Disclaimer
 
 - This is an independent, community-driven optimization project and is not affiliated with, maintained by, or officially endorsed by Kuro Games.
-- Deploy the **`CONFIG ULTRA (WARNING)`** profile with discretion. Ensure adequate thermal headroom on your system, as it imposes substantial rendering stress on the GPU rasterization core and VRAM sub-systems.
+- Deploy the **`06 - CONFIG ULTRA EXTREME (WARNING)`** profile with discretion. Ensure adequate thermal headroom on your system, as it imposes substantial rendering stress on the GPU rasterization core and VRAM sub-systems.
 
 ---
 

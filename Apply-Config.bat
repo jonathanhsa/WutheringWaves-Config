@@ -41,30 +41,30 @@ echo [2] LOW               (4-Core CPU, 8GB RAM, iGPU 2GB VRAM)
 echo [3] MEDIUM            (Balanced 60 FPS, GTX 1050Ti/1650 4GB)
 echo [4] HIGH              (Enhanced Lighting, RTX 2060/3060 6-8GB)
 echo [5] VERY HIGH         (Enthusiast Fidelity, RTX 3070/3080/4070)
-echo [6] ULTRA (WARNING)   (Insane 4K Overkill, RTX 4080/4090 32GB)
+echo [6] ULTRA EXTREME (WARNING) (Insane 4K Overkill, RTX 4080/4090 32GB)
 echo [7] RESTORE STOCK     (Default Vanilla Game Settings)
 echo [0] Exit
 echo.
 set /p PROFILE_CHOICE="Enter your choice [0-7]: "
 
 if "%PROFILE_CHOICE%"=="1" (
-    set "SRC_CONFIG=%~dp0CONFIG ULTRA LOW\engine.ini"
+    set "SRC_CONFIG=%~dp001 - CONFIG ULTRA LOW\engine.ini"
     set "PROFILE_NAME=ULTRA LOW"
 ) else if "%PROFILE_CHOICE%"=="2" (
-    set "SRC_CONFIG=%~dp0CONFIG LOW\engine.ini"
+    set "SRC_CONFIG=%~dp002 - CONFIG LOW\engine.ini"
     set "PROFILE_NAME=LOW"
 ) else if "%PROFILE_CHOICE%"=="3" (
-    set "SRC_CONFIG=%~dp0CONFIG MED\engine.ini"
+    set "SRC_CONFIG=%~dp003 - CONFIG MED\engine.ini"
     set "PROFILE_NAME=MEDIUM"
 ) else if "%PROFILE_CHOICE%"=="4" (
-    set "SRC_CONFIG=%~dp0CONFIG HIGH\engine.ini"
+    set "SRC_CONFIG=%~dp004 - CONFIG HIGH\engine.ini"
     set "PROFILE_NAME=HIGH"
 ) else if "%PROFILE_CHOICE%"=="5" (
-    set "SRC_CONFIG=%~dp0CONFIG VERY HIGH\engine.ini"
+    set "SRC_CONFIG=%~dp005 - CONFIG VERY HIGH\engine.ini"
     set "PROFILE_NAME=VERY HIGH"
 ) else if "%PROFILE_CHOICE%"=="6" (
-    set "SRC_CONFIG=%~dp0CONFIG ULTRA (WARNING)\engine.ini"
-    set "PROFILE_NAME=ULTRA (WARNING)"
+    set "SRC_CONFIG=%~dp006 - CONFIG ULTRA EXTREME (WARNING)\engine.ini"
+    set "PROFILE_NAME=ULTRA EXTREME (WARNING)"
 ) else if "%PROFILE_CHOICE%"=="7" (
     set "SRC_CONFIG=%~dp0engine-stock.ini"
     set "PROFILE_NAME=STOCK DEFAULT"
