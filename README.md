@@ -4,9 +4,16 @@
 
 [![Game: Wuthering Waves](https://img.shields.io/badge/Game-Wuthering%20Waves-0ea5e9?style=flat-square&labelColor=0f172a)](https://wutheringwaves.kurogames.com/)
 [![Engine: Unreal Engine 4](https://img.shields.io/badge/Engine-Unreal%20Engine%204.26-6366f1?style=flat-square&labelColor=1e1b4b)](https://www.unrealengine.com/)
+[![DirectX](https://img.shields.io/badge/DirectX-DX11%20%7C%20DX12-059669?style=flat-square&labelColor=064e3b)](#)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows%2064--bit-0078D4?style=flat-square&labelColor=0c4a6e)](#)
+[![Hardware](https://img.shields.io/badge/Hardware-NVIDIA%20%7C%20AMD%20%7C%20Intel-7c3aed?style=flat-square&labelColor=2e1065)](#)
+<br>
 [![Frame Gen: OptiScaler](https://img.shields.io/badge/Frame%20Gen-OptiScaler%20%7C%20FSR%203-d946ef?style=flat-square&labelColor=581c87)](#frame-generation-setup-optiscaler--fsr-3)
-[![License: MIT](https://img.shields.io/badge/License-MIT-10b981?style=flat-square&labelColor=064e3b)](#)
+[![Upscaling](https://img.shields.io/badge/Upscaling-DLSS%20%7C%20FSR%20%7C%20XeSS-8b5cf6?style=flat-square&labelColor=3b0764)](#)
+[![Target FPS](https://img.shields.io/badge/Target%20FPS-60%20--%20120%2B%20FPS-f59e0b?style=flat-square&labelColor=451a03)](#)
+[![Shader Cache](https://img.shields.io/badge/Shader%20Cache-Async%20Pipeline-06b6d4?style=flat-square&labelColor=164e63)](#)
+[![Safety](https://img.shields.io/badge/Safety-100%25%20Client--Side-10b981?style=flat-square&labelColor=064e3b)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square&labelColor=14532d)](#)
 
 <p align="center">
   <img src="https://files.catbox.moe/4ravx1.gif" width="125" alt="Welcome to Wuthering Waves Optimization Suite" />
