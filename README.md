@@ -1,3 +1,5 @@
+<div align="center">
+
 # Wuthering Waves: Engine Configuration Framework
 
 [![Game: Wuthering Waves](https://img.shields.io/badge/Game-Wuthering%20Waves-1e293b?style=flat-square)](https://wutheringwaves.kurogames.com/)
@@ -6,6 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-1e293b?style=flat-square)](#)
 
 A precision-engineered suite of `Engine.ini` performance profiles for **Wuthering Waves** (Unreal Engine 4). Designed to eliminate frame traversal hitches, enforce asynchronous shader pre-caching, stabilize frame-time delivery, and resolve memory paging bottlenecks across all PC hardware tiers.
+
+</div>
 
 ---
 
@@ -32,6 +36,10 @@ A precision-engineered suite of `Engine.ini` performance profiles for **Wutherin
 ---
 
 ## Architectural Overview
+
+<div align="center">
+  <img src="https://files.catbox.moe/yf2yru.gif" width="130" alt="Phrolova Sigh" />
+</div>
 
 Unreal Engine 4 open-world titles often suffer from three distinct hardware bottlenecks on PC systems:
 
@@ -171,6 +179,10 @@ After deploying your configuration, align the in-game options via **Settings -> 
 
 ## Frequently Asked Questions
 
+<div align="center">
+  <img src="https://files.catbox.moe/4h5u5c.gif" width="130" alt="Frequently Asked Questions" />
+</div>
+
 <details>
 <summary><b>Is modifying Engine.ini bannable?</b></summary>
 <br>
@@ -201,6 +213,13 @@ Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)<
 
 - This is an independent, community-driven optimization project and is not affiliated with, maintained by, or officially endorsed by Kuro Games.
 - Deploy the **`06 - CONFIG ULTRA EXTREME (WARNING)`** profile with discretion. Ensure adequate thermal headroom on your system, as it imposes substantial rendering stress on the GPU rasterization core and VRAM sub-systems.
+
+---
+
+<div align="center">
+  <img src="https://files.catbox.moe/dj90gi.gif" width="130" alt="Enjoy Wuthering Waves" />
+  <p><b>Enjoy smooth, stutter-free exploration across Solaris-3!</b></p>
+</div>
 
 ---
 

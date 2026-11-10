@@ -14,3 +14,14 @@ $RECYCLE.BIN/
 .vscode/
 .idea/
 
+# Archives
+*.rar
+*.zip
+*.7z
+*.tar.gz
+
+# Local media
+*.gif
+
+
+
