@@ -57,6 +57,10 @@ Each profile targets a distinct balance between draw call efficiency, texture st
 
 ## Profile Performance Matrix
 
+<div align="center">
+  <img src="https://files.catbox.moe/g909ko.gif" width="110" alt="Profile Performance Matrix" />
+</div>
+
 | Profile Directory | Target Hardware Class | Rendering Features | Resolution Scale | Target Framerate |
 | :--- | :--- | :--- | :--- | :--- |
 | `01 - CONFIG ULTRA LOW` | Dual/Quad Core, 4-8GB RAM, Intel HD / UHD | Shadows OFF, Foliage OFF, Fog OFF, Minimal Particles | 65% + Sharpening | 30 - 60 FPS |
@@ -83,6 +87,11 @@ Designed for low-specification machines with legacy integrated graphics (Intel H
 - **Resolution**: Scaled to 65% of native display resolution, paired with a custom tonemapper sharpen pass (`r.Tonemapper.Sharpen=0.8`).
 
 ### Preset 2: LOW (4-Core CPU, 8GB RAM, 2GB iGPU)
+
+<div align="center">
+  <img src="https://files.catbox.moe/a0xz2j.gif" width="110" alt="Low Spec Sleeping" />
+</div>
+
 Optimized specifically for modern laptops and desktops running integrated GPUs (Intel Iris Xe, AMD Radeon Vega 6/7/8) where VRAM is dynamically carved out of 8GB system RAM.
 - **Memory Streaming**: Hard ceiling of 1000MB allocated to texture streaming (`r.Streaming.PoolSize=1000`), preventing system memory paging crashes.
 - **Atmospherics**: Volumetric fog and volumetric cloud passes disabled to unburden integrated GPU rasterizers.
@@ -104,6 +113,11 @@ High visual fidelity targeting modern mainstream GPUs with 6GB to 8GB of dedicat
 - **Texture Cache**: Allocated 4500MB texture pool.
 
 ### Preset 5: VERY HIGH (RTX 3070 / 3080 / 4070, 8GB-12GB VRAM)
+
+<div align="center">
+  <img src="https://files.catbox.moe/amzdee.gif" width="110" alt="120 FPS Sing" />
+</div>
+
 Enthusiast-tier fidelity calibrated for high refresh rate displays (120Hz - 165Hz+).
 - **Shadows**: 3072x3072 shadow buffers with 4 cascades and extended cascade split radiuses.
 - **Voxel Grid**: Volumetric fog slice resolution tightened (`GridPixelSizeK=8`, `GridSizeZ=128`).
@@ -126,6 +140,10 @@ An uncapped, hardware-stressing profile engineered exclusively for flagship hard
 ---
 
 ## System Requirements
+
+<div align="center">
+  <img src="https://files.catbox.moe/6xu2bj.gif" width="110" alt="System Requirements" />
+</div>
 
 - **Operating System**: Windows 10 (64-bit) or Windows 11 (64-bit).
 - **Game Installation**: Official Kuro Games Launcher or Epic Games Store build.
@@ -158,6 +176,10 @@ The root of this repository includes an interactive batch utility: `Apply-Config
 ---
 
 ### Method 2: Manual Deployment
+
+<div align="center">
+  <img src="https://files.catbox.moe/uey3t1.gif" width="110" alt="Manual Deployment Confused" />
+</div>
 
 To install configurations manually:
 
