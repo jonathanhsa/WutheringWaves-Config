@@ -209,14 +209,18 @@ Wuthering Waves only natively supports DLSS 3 Frame Generation on RTX 40-series 
 
 ### Method 1: Automated Script (Recommended)
 
+<div align="center">
+  <img src="https://files.catbox.moe/0anj40.gif" width="115" alt="Automated Script Switcher" />
+</div>
+
 The root of this repository includes an interactive batch utility: `Apply-Config.bat`.
 
 1. Clone or download this repository.
 2. Run `Apply-Config.bat`.
-3. Select your target configuration directory:
-   - Option `1`: Automatically detects `%LOCALAPPDATA%\WutheringWaves\Saved\Config\WindowsNoEditor`.
-   - Option `2`: Allows custom game folder input if your installation resides elsewhere.
-4. Select the desired profile (`1` through `6`, or `7` to restore default settings).
+3. **Smart Auto-Detection**:
+   - The script automatically scans all storage drives (`C:`, `D:`, `E:`, `F:`, etc.) and game shortcuts to locate your actual Wuthering Waves configuration directory (`...\Client\Saved\Config\WindowsNoEditor`).
+   - Press **`1`** to confirm the auto-detected path, or **`2`** to enter a custom folder path manually.
+4. Select your desired profile (`1` through `6`, or `7` to restore default settings).
 5. The script automatically:
    - Creates a safety backup of your current setup (`Engine.ini.backup`).
    - Replaces `Engine.ini` with the selected profile.
@@ -232,11 +236,11 @@ The root of this repository includes an interactive batch utility: `Apply-Config
 
 To install configurations manually:
 
-1. Press `Win + R`, paste the following path, and press `Enter`:
+1. Open your Wuthering Waves installation directory and navigate to the configuration folder:
    ```text
-   %LOCALAPPDATA%\WutheringWaves\Saved\Config\WindowsNoEditor
+   <GameDirectory>\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor\
    ```
-   *(Alternative install path: `<GameDirectory>\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor\`)*
+   *(Example: `C:\Wuthering Waves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor\` or `F:\Games\Wuthering Waves\...\Client\Saved\Config\WindowsNoEditor\`)*
 
 2. Create a backup of your existing `Engine.ini` file.
 3. Open your chosen profile folder (e.g. `02 - CONFIG LOW`), open `engine.ini`, and copy its entire contents.
@@ -334,8 +338,7 @@ Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)<
 ## Contributing & Support
 
 <div align="center">
-  <img src="https://files.catbox.moe/cd0o84.gif" width="115" alt="Contributing" />
-  <img src="https://files.catbox.moe/0anj40.gif" width="115" alt="Support" />
+  <img src="https://files.catbox.moe/cd0o84.gif" width="125" alt="Contributing" />
 </div>
 
 Technical proposals, benchmarks, and cvar refinements are welcome! Please open an **Issue** or submit a **Pull Request** documenting tested hardware specifications and performance deltas. If this framework helped improve your game performance, consider starring the repository!

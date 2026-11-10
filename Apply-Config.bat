@@ -7,18 +7,56 @@ echo      WUTHERING WAVES ENGINE CONFIGURATION SWITCHER
 echo ========================================================
 echo.
 
-set "DEFAULT_PATH=%LOCALAPPDATA%\WutheringWaves\Saved\Config\WindowsNoEditor"
+set "DETECTED_PATH="
 
-echo Target Directory:
-echo [1] Auto-detect: %DEFAULT_PATH%
-echo [2] Enter custom path manually
-echo.
-set /p TARGET_CHOICE="Select target path (Default is 1): "
+REM 1. Fast drive scan across common game directories (C through K)
+for %%D in (C D E F G H I J K) do (
+    if not defined DETECTED_PATH (
+        if exist "%%D:\Games\Wuthering Waves\Wuthering Waves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor" (
+            set "DETECTED_PATH=%%D:\Games\Wuthering Waves\Wuthering Waves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor"
+        ) else if exist "%%D:\Wuthering Waves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor" (
+            set "DETECTED_PATH=%%D:\Wuthering Waves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor"
+        ) else if exist "%%D:\Games\Wuthering Waves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor" (
+            set "DETECTED_PATH=%%D:\Games\Wuthering Waves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor"
+        ) else if exist "%%D:\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor" (
+            set "DETECTED_PATH=%%D:\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor"
+        ) else if exist "%%D:\Program Files\Epic Games\WutheringWaves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor" (
+            set "DETECTED_PATH=%%D:\Program Files\Epic Games\WutheringWaves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor"
+        ) else if exist "%%D:\SteamLibrary\steamapps\common\Wuthering Waves\Client\Saved\Config\WindowsNoEditor" (
+            set "DETECTED_PATH=%%D:\SteamLibrary\steamapps\common\Wuthering Waves\Client\Saved\Config\WindowsNoEditor"
+        ) else if exist "%%D:\Program Files (x86)\Steam\steamapps\common\Wuthering Waves\Client\Saved\Config\WindowsNoEditor" (
+            set "DETECTED_PATH=%%D:\Program Files (x86)\Steam\steamapps\common\Wuthering Waves\Client\Saved\Config\WindowsNoEditor"
+        )
+    )
+)
 
-if "%TARGET_CHOICE%"=="2" (
-    set /p GAME_PATH="Enter the folder path where Engine.ini is located: "
+REM 2. Fallback to desktop shortcut resolution if not found by drive loop
+if not defined DETECTED_PATH (
+    for /f "delims=" %%I in ('powershell -NoProfile -Command "$sh=New-Object -ComObject WScript.Shell; Get-ChildItem -Path @(\"$env:USERPROFILE\Desktop\",\"$env:PUBLIC\Desktop\") -Filter \"*Wuthering*.lnk\" -ErrorAction SilentlyContinue | ForEach-Object { $t=$sh.CreateShortcut($_.FullName).TargetPath; if ($t) { $d=Split-Path $t; @(Join-Path $d \"Wuthering Waves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor\", Join-Path $d \"Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor\", Join-Path $d \"Client\Saved\Config\WindowsNoEditor\") | ForEach-Object { if (Test-Path $_) { $_; exit } } } }"') do (
+        set "DETECTED_PATH=%%I"
+    )
+)
+
+if defined DETECTED_PATH (
+    echo [FOUND] Auto-detected game configuration directory:
+    echo "!DETECTED_PATH!"
+    echo.
+    echo Target Directory:
+    echo [1] Use auto-detected path (Recommended)
+    echo [2] Enter custom path manually
+    echo.
+    set /p TARGET_CHOICE="Select target path [1/2] (Default is 1): "
+    if "!TARGET_CHOICE!"=="2" (
+        set /p GAME_PATH="Enter the folder path where Engine.ini is located: "
+    ) else (
+        set "GAME_PATH=!DETECTED_PATH!"
+    )
 ) else (
-    set "GAME_PATH=%DEFAULT_PATH%"
+    echo [NOTICE] Could not automatically locate Wuthering Waves directory.
+    echo Please specify the folder path where Engine.ini is located.
+    echo (Example: F:\Games\Wuthering Waves\Wuthering Waves\Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor)
+    echo.
+    set /p GAME_PATH="Enter config folder path: "
 )
 
 if not exist "%GAME_PATH%" (
