@@ -7,6 +7,10 @@
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows%2064--bit-1e293b?style=flat-square)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-1e293b?style=flat-square)](#)
 
+<p align="center">
+  <img src="https://files.catbox.moe/4ravx1.gif" width="120" alt="Welcome" />
+</p>
+
 A precision-engineered suite of `Engine.ini` performance profiles for **Wuthering Waves** (Unreal Engine 4). Designed to eliminate frame traversal hitches, enforce asynchronous shader pre-caching, stabilize frame-time delivery, and resolve memory paging bottlenecks across all PC hardware tiers.
 
 </div>
@@ -38,7 +42,7 @@ A precision-engineered suite of `Engine.ini` performance profiles for **Wutherin
 ## Architectural Overview
 
 <div align="center">
-  <img src="https://files.catbox.moe/yf2yru.gif" width="130" alt="Phrolova Sigh" />
+  <img src="https://files.catbox.moe/6neo09.gif" width="130" alt="Aemeath Raging at Laptop" />
 </div>
 
 Unreal Engine 4 open-world titles often suffer from three distinct hardware bottlenecks on PC systems:
@@ -67,6 +71,11 @@ Each profile targets a distinct balance between draw call efficiency, texture st
 ## Profile Breakdown
 
 ### Preset 1: ULTRA LOW (Minimalist Potato Mode)
+
+<div align="center">
+  <img src="https://files.catbox.moe/342906.gif" width="110" alt="Potato Mode" />
+</div>
+
 Designed for low-specification machines with legacy integrated graphics (Intel HD 520/620/630) or limited system memory (4GB - 8GB).
 - **Shadowing**: Cascading shadow maps and distance field shadows completely disabled (`r.ShadowQuality=0`, `r.Shadow.CSM.MaxCascades=0`).
 - **Vegetation**: Foliage and procedural grass generation eliminated (`foliage.DensityScale=0`, `grass.DensityScale=0`) to reduce CPU draw calls.
@@ -102,6 +111,11 @@ Enthusiast-tier fidelity calibrated for high refresh rate displays (120Hz - 165H
 - **Texture Cache**: Allocated 6500MB texture pool.
 
 ### Preset 6: ULTRA EXTREME (WARNING: Flagship Hardware Melter)
+
+<div align="center">
+  <img src="https://files.catbox.moe/omzl8c.gif" width="110" alt="Hardware Melter Panic" />
+</div>
+
 An uncapped, hardware-stressing profile engineered exclusively for flagship hardware (RTX 4080, RTX 4090, RX 7900 XTX) with 32GB+ system RAM.
 - **Shadows**: 4096x4096p 4K buffers with 6 cascading splits across a 300% shadow projection distance.
 - **Polygon Locking**: Mesh degradation disabled (`r.StaticMeshLODDistanceScale=0.1`, `r.SkeletalMeshLODBias=-2`), permanently forcing highest-resolution LOD 0 geometry across all rendering distances.
@@ -123,6 +137,10 @@ An uncapped, hardware-stressing profile engineered exclusively for flagship hard
 ## Installation Methods
 
 ### Method 1: Automated Script (Recommended)
+
+<div align="center">
+  <img src="https://files.catbox.moe/qomanc.gif" width="110" alt="Running Script" />
+</div>
 
 The root of this repository includes an interactive batch utility: `Apply-Config.bat`.
 
@@ -163,6 +181,10 @@ To install configurations manually:
 ---
 
 ## Recommended In-Game Settings
+
+<div align="center">
+  <img src="https://files.catbox.moe/7xttpk.gif" width="110" alt="Writing Settings Note" />
+</div>
 
 After deploying your configuration, align the in-game options via **Settings -> Graphics**:
 
@@ -211,6 +233,10 @@ Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)<
 
 ## Safety and Disclaimer
 
+<div align="center">
+  <img src="https://files.catbox.moe/ujuxu5.gif" width="110" alt="Safety Warning" />
+</div>
+
 - This is an independent, community-driven optimization project and is not affiliated with, maintained by, or officially endorsed by Kuro Games.
 - Deploy the **`06 - CONFIG ULTRA EXTREME (WARNING)`** profile with discretion. Ensure adequate thermal headroom on your system, as it imposes substantial rendering stress on the GPU rasterization core and VRAM sub-systems.
 
@@ -224,5 +250,9 @@ Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)<
 ---
 
 ## Contributing
+
+<div align="center">
+  <img src="https://files.catbox.moe/cd0o84.gif" width="110" alt="Contributing" />
+</div>
 
 Technical proposals, benchmarks, and cvar refinements are welcome. Please open an **Issue** or submit a **Pull Request** documenting tested hardware specifications and performance deltas.
