@@ -333,6 +333,17 @@ Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)<
 - This is an independent, community-driven optimization project and is not affiliated with, maintained by, or officially endorsed by Kuro Games.
 - Deploy the **`06 - CONFIG ULTRA EXTREME (WARNING)`** profile with discretion. Ensure adequate thermal headroom on your system, as it imposes substantial rendering stress on the GPU rasterization core and VRAM sub-systems.
 
+> [!NOTE]
+> ### 💬 A Personal Note from the Creator
+> 
+> **[ID] Bahasa Indonesia:**  
+> *"Proyek ini saya buat dengan sepenuh hati karena saya pernah merasakan sendiri betapa frustrasinya bermain di perangkat spek ultra-low yang patah-patah dan nge-lag parah. Melalui repositori ini, saya ingin membagikan apa yang saya bisa agar sesama Rover dapat menikmati dunia Solaris-3 dengan lancar dan nyaman, apa pun spesifikasi hardware yang kalian miliki."*
+> 
+> **[EN] English:**  
+> *"I built this project with all my heart because I've experienced firsthand the struggle of playing on low-end hardware with agonizing stutters and unplayable frame drops. Through this optimization suite, I want to give back everything I can so that every Rover can explore Solaris-3 smoothly, regardless of their hardware tier."*
+> 
+> — **JonathanHS**
+
 ---
 
 <div align="center">
