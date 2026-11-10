@@ -2,16 +2,17 @@
 
 # Wuthering Waves: Engine Configuration Framework
 
-[![Game: Wuthering Waves](https://img.shields.io/badge/Game-Wuthering%20Waves-1e293b?style=flat-square)](https://wutheringwaves.kurogames.com/)
-[![Engine: Unreal Engine 4](https://img.shields.io/badge/Engine-Unreal%20Engine%204.26-1e293b?style=flat-square)](https://www.unrealengine.com/)
-[![Platform: Windows](https://img.shields.io/badge/Platform-Windows%2064--bit-1e293b?style=flat-square)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-1e293b?style=flat-square)](#)
+[![Game: Wuthering Waves](https://img.shields.io/badge/Game-Wuthering%20Waves-0ea5e9?style=flat-square&labelColor=0f172a)](https://wutheringwaves.kurogames.com/)
+[![Engine: Unreal Engine 4](https://img.shields.io/badge/Engine-Unreal%20Engine%204.26-6366f1?style=flat-square&labelColor=1e1b4b)](https://www.unrealengine.com/)
+[![Platform: Windows](https://img.shields.io/badge/Platform-Windows%2064--bit-0078D4?style=flat-square&labelColor=0c4a6e)](#)
+[![Frame Gen: OptiScaler](https://img.shields.io/badge/Frame%20Gen-OptiScaler%20%7C%20FSR%203-d946ef?style=flat-square&labelColor=581c87)](#frame-generation-setup-optiscaler--fsr-3)
+[![License: MIT](https://img.shields.io/badge/License-MIT-10b981?style=flat-square&labelColor=064e3b)](#)
 
 <p align="center">
-  <img src="https://files.catbox.moe/4ravx1.gif" width="120" alt="Welcome" />
+  <img src="https://files.catbox.moe/4ravx1.gif" width="125" alt="Welcome to WuWa Config Framework" />
 </p>
 
-A precision-engineered suite of `Engine.ini` performance profiles for **Wuthering Waves** (Unreal Engine 4). Designed to eliminate frame traversal hitches, enforce asynchronous shader pre-caching, stabilize frame-time delivery, and resolve memory paging bottlenecks across all PC hardware tiers.
+A precision-engineered suite of `Engine.ini` performance profiles and **Frame Generation mods** for **Wuthering Waves** (Unreal Engine 4). Designed to eliminate traversal hitches, enforce asynchronous shader pre-caching, stabilize frame delivery, and double framerates across all PC hardware tiers.
 
 </div>
 
@@ -28,6 +29,7 @@ A precision-engineered suite of `Engine.ini` performance profiles for **Wutherin
   - [Preset 4: HIGH (RTX 2060 / 3060 / 4060, 6GB-8GB VRAM)](#preset-4-high-rtx-2060--3060--4060-6gb-8gb-vram)
   - [Preset 5: VERY HIGH (RTX 3070 / 3080 / 4070, 8GB-12GB VRAM)](#preset-5-very-high-rtx-3070--3080--4070-8gb-12gb-vram)
   - [Preset 6: ULTRA EXTREME (WARNING: Flagship Hardware Melter)](#preset-6-ultra-extreme-warning-flagship-hardware-melter)
+- [Frame Generation Setup (OptiScaler & FSR 3)](#frame-generation-setup-optiscaler--fsr-3)
 - [System Requirements](#system-requirements)
 - [Installation Methods](#installation-methods)
   - [Method 1: Automated Script (Recommended)](#method-1-automated-script-recommended)
@@ -35,7 +37,7 @@ A precision-engineered suite of `Engine.ini` performance profiles for **Wutherin
 - [Recommended In-Game Settings](#recommended-in-game-settings)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Safety and Disclaimer](#safety-and-disclaimer)
-- [Contributing](#contributing)
+- [Contributing & Support](#contributing--support)
 
 ---
 
@@ -58,7 +60,7 @@ Each profile targets a distinct balance between draw call efficiency, texture st
 ## Profile Performance Matrix
 
 <div align="center">
-  <img src="https://files.catbox.moe/g909ko.gif" width="110" alt="Profile Performance Matrix" />
+  <img src="https://files.catbox.moe/g909ko.gif" width="115" alt="Profile Performance Matrix" />
 </div>
 
 | Profile Directory | Target Hardware Class | Rendering Features | Resolution Scale | Target Framerate |
@@ -77,7 +79,7 @@ Each profile targets a distinct balance between draw call efficiency, texture st
 ### Preset 1: ULTRA LOW (Minimalist Potato Mode)
 
 <div align="center">
-  <img src="https://files.catbox.moe/342906.gif" width="110" alt="Potato Mode" />
+  <img src="https://files.catbox.moe/342906.gif" width="115" alt="Preset 1 Potato Mode" />
 </div>
 
 Designed for low-specification machines with legacy integrated graphics (Intel HD 520/620/630) or limited system memory (4GB - 8GB).
@@ -89,7 +91,7 @@ Designed for low-specification machines with legacy integrated graphics (Intel H
 ### Preset 2: LOW (4-Core CPU, 8GB RAM, 2GB iGPU)
 
 <div align="center">
-  <img src="https://files.catbox.moe/a0xz2j.gif" width="110" alt="Low Spec Sleeping" />
+  <img src="https://files.catbox.moe/a0xz2j.gif" width="115" alt="Preset 2 Low Spec" />
 </div>
 
 Optimized specifically for modern laptops and desktops running integrated GPUs (Intel Iris Xe, AMD Radeon Vega 6/7/8) where VRAM is dynamically carved out of 8GB system RAM.
@@ -99,6 +101,11 @@ Optimized specifically for modern laptops and desktops running integrated GPUs (
 - **Resolution**: Scaled to 85% native with tonemapper compensation.
 
 ### Preset 3: MEDIUM (GTX 1050 Ti / GTX 1650, 4GB VRAM)
+
+<div align="center">
+  <img src="https://files.catbox.moe/83a96b.gif" width="115" alt="Preset 3 Medium Balanced" />
+</div>
+
 A balanced configuration engineered to hold a stable 60 FPS on entry-level dedicated gaming GPUs with 4GB VRAM.
 - **Shadowing**: 1024x1024 resolution shadow buffers with 2 cascades.
 - **Reflections & Occlusion**: Ambient Occlusion (level 1) and Screen Space Reflections enabled with low ray step budgets.
@@ -106,6 +113,11 @@ A balanced configuration engineered to hold a stable 60 FPS on entry-level dedic
 - **Resolution**: 100% Native display scale.
 
 ### Preset 4: HIGH (RTX 2060 / 3060 / 4060, 6GB-8GB VRAM)
+
+<div align="center">
+  <img src="https://files.catbox.moe/r5a2bh.gif" width="115" alt="Preset 4 High Sweet Spot" />
+</div>
+
 High visual fidelity targeting modern mainstream GPUs with 6GB to 8GB of dedicated VRAM.
 - **Lighting & Shadows**: 2048x2048 shadow buffers with 3 cascades, distance field contact shadows enabled.
 - **Atmospherics**: Standard voxel volumetric fog and procedural cloud layers enabled.
@@ -115,7 +127,7 @@ High visual fidelity targeting modern mainstream GPUs with 6GB to 8GB of dedicat
 ### Preset 5: VERY HIGH (RTX 3070 / 3080 / 4070, 8GB-12GB VRAM)
 
 <div align="center">
-  <img src="https://files.catbox.moe/amzdee.gif" width="110" alt="120 FPS Sing" />
+  <img src="https://files.catbox.moe/amzdee.gif" width="115" alt="Preset 5 Very High 120 FPS" />
 </div>
 
 Enthusiast-tier fidelity calibrated for high refresh rate displays (120Hz - 165Hz+).
@@ -127,7 +139,7 @@ Enthusiast-tier fidelity calibrated for high refresh rate displays (120Hz - 165H
 ### Preset 6: ULTRA EXTREME (WARNING: Flagship Hardware Melter)
 
 <div align="center">
-  <img src="https://files.catbox.moe/omzl8c.gif" width="110" alt="Hardware Melter Panic" />
+  <img src="https://files.catbox.moe/omzl8c.gif" width="115" alt="Preset 6 Ultra Melter" />
 </div>
 
 An uncapped, hardware-stressing profile engineered exclusively for flagship hardware (RTX 4080, RTX 4090, RX 7900 XTX) with 32GB+ system RAM.
@@ -139,10 +151,51 @@ An uncapped, hardware-stressing profile engineered exclusively for flagship hard
 
 ---
 
+## Frame Generation Setup (OptiScaler & FSR 3)
+
+<div align="center">
+  <img src="https://files.catbox.moe/6xu2bj.gif" width="130" alt="Driving Frame Generation" />
+</div>
+
+Wuthering Waves only natively supports DLSS 3 Frame Generation on RTX 40-series cards. The included **`07 - ENABLE FRAMEGEN`** package integrates **OptiScaler** with **AMD FidelityFX FSR 3 Frame Generation**, unlocking 2x framerate boosts on:
+
+- **NVIDIA GeForce RTX 20 & 30 Series** (RTX 2060 / 2070 / 2080 / 3060 / 3070 / 3080 / 3090)
+- **NVIDIA GeForce GTX 16 Series** (GTX 1650 / 1660 / 1660 Ti)
+- **AMD Radeon RX 6000 & 7000 Series** (RX 6600, 6700 XT, 7800 XT, etc.)
+- **Intel Arc Discrete GPUs** (A580, A750, A770)
+
+### How to Install Frame Generation:
+
+1. Open your Wuthering Waves game installation directory and locate the binary folder:
+   ```text
+   <GameDirectory>\Wuthering Waves Game\Client\Binaries\Win64\
+   ```
+   *(This is the folder containing `Client-Win64-Shipping.exe`)*
+2. Open the **`07 - ENABLE FRAMEGEN`** folder inside this repository.
+3. Copy all of the following items directly into `Client\Binaries\Win64\`:
+   - `dxgi.dll`
+   - `version.dll`
+   - `OptiScaler.ini`
+   - `OptiScaler` (folder)
+   - `Licenses` (folder)
+4. Launch the game normally.
+
+### How to Activate In-Game:
+
+- Press **`Insert`** on your keyboard while in-game to toggle the **OptiScaler GUI Overlay**.
+- Under Upscaling / Frame Generation, enable **FSR 3 / DLSS-G Frame Generation**.
+- Set **In-Game Graphics**: Enable **DLSS** or **FSR** with Super Resolution set to *Balanced* or *Quality*.
+- Press **`Insert`** again to hide the menu and enjoy doubled framerates!
+
+> [!TIP]
+> To uninstall Frame Generation, simply delete `dxgi.dll`, `version.dll`, `OptiScaler.ini`, and the `OptiScaler` folder from `Client\Binaries\Win64\`.
+
+---
+
 ## System Requirements
 
 <div align="center">
-  <img src="https://files.catbox.moe/6xu2bj.gif" width="110" alt="System Requirements" />
+  <img src="https://files.catbox.moe/qomanc.gif" width="115" alt="System Requirements" />
 </div>
 
 - **Operating System**: Windows 10 (64-bit) or Windows 11 (64-bit).
@@ -155,10 +208,6 @@ An uncapped, hardware-stressing profile engineered exclusively for flagship hard
 ## Installation Methods
 
 ### Method 1: Automated Script (Recommended)
-
-<div align="center">
-  <img src="https://files.catbox.moe/qomanc.gif" width="110" alt="Running Script" />
-</div>
 
 The root of this repository includes an interactive batch utility: `Apply-Config.bat`.
 
@@ -178,7 +227,7 @@ The root of this repository includes an interactive batch utility: `Apply-Config
 ### Method 2: Manual Deployment
 
 <div align="center">
-  <img src="https://files.catbox.moe/uey3t1.gif" width="110" alt="Manual Deployment Confused" />
+  <img src="https://files.catbox.moe/uey3t1.gif" width="115" alt="Manual Deployment Confused" />
 </div>
 
 To install configurations manually:
@@ -205,7 +254,7 @@ To install configurations manually:
 ## Recommended In-Game Settings
 
 <div align="center">
-  <img src="https://files.catbox.moe/7xttpk.gif" width="110" alt="Writing Settings Note" />
+  <img src="https://files.catbox.moe/7xttpk.gif" width="115" alt="Writing Settings Note" />
 </div>
 
 After deploying your configuration, align the in-game options via **Settings -> Graphics**:
@@ -224,19 +273,30 @@ After deploying your configuration, align the in-game options via **Settings -> 
 ## Frequently Asked Questions
 
 <div align="center">
-  <img src="https://files.catbox.moe/4h5u5c.gif" width="130" alt="Frequently Asked Questions" />
+  <img src="https://files.catbox.moe/4h5u5c.gif" width="125" alt="Frequently Asked Questions" />
 </div>
 
 <details>
-<summary><b>Is modifying Engine.ini bannable?</b></summary>
+<summary><b>Is modifying Engine.ini or using OptiScaler bannable?</b></summary>
 <br>
-<b>No.</b> Editing <code>Engine.ini</code> alters client-side rendering console variables exposed by Unreal Engine. It does not modify game binaries (<code>.exe</code>), inject external dynamic-link libraries (DLLs), alter memory values, or circumvent anti-cheat drivers (Anti-Cheat Expert / TpSafe).
+
+<div align="center">
+  <img src="https://files.catbox.moe/u33k85.gif" width="110" alt="No Ban / Safe" />
+</div>
+
+<b>No.</b> Editing <code>Engine.ini</code> alters client-side rendering console variables exposed by Unreal Engine. OptiScaler acts as a direct translation layer between DirectX and rendering APIs. Neither touches game memory values, server-side data, or circumvents anti-cheat drivers (Anti-Cheat Expert / TpSafe).
 </details>
 
 <details>
 <summary><b>Why do custom settings revert after exiting the game?</b></summary>
 <br>
 The game launcher detected an unprotected configuration file and regenerated it. Ensure you right-click <code>Engine.ini</code>, navigate to <b>Properties</b>, check the <b>Read-only</b> flag, and click Apply.
+</details>
+
+<details>
+<summary><b>Can I combine an Engine.ini profile with Frame Generation?</b></summary>
+<br>
+<b>Yes!</b> They complement each other perfectly. The <code>Engine.ini</code> profile optimizes draw calls, eliminates traversal hitches, and guarantees smooth base frame delivery, while OptiScaler doubles your final output framerate. For optimal results, aim for a baseline of at least 45–60 FPS before enabling Frame Gen.
 </details>
 
 <details>
@@ -256,7 +316,7 @@ Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)<
 ## Safety and Disclaimer
 
 <div align="center">
-  <img src="https://files.catbox.moe/ujuxu5.gif" width="110" alt="Safety Warning" />
+  <img src="https://files.catbox.moe/ujuxu5.gif" width="115" alt="Safety Warning" />
 </div>
 
 - This is an independent, community-driven optimization project and is not affiliated with, maintained by, or officially endorsed by Kuro Games.
@@ -271,10 +331,11 @@ Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)<
 
 ---
 
-## Contributing
+## Contributing & Support
 
 <div align="center">
-  <img src="https://files.catbox.moe/cd0o84.gif" width="110" alt="Contributing" />
+  <img src="https://files.catbox.moe/cd0o84.gif" width="115" alt="Contributing" />
+  <img src="https://files.catbox.moe/0anj40.gif" width="115" alt="Support" />
 </div>
 
-Technical proposals, benchmarks, and cvar refinements are welcome. Please open an **Issue** or submit a **Pull Request** documenting tested hardware specifications and performance deltas.
+Technical proposals, benchmarks, and cvar refinements are welcome! Please open an **Issue** or submit a **Pull Request** documenting tested hardware specifications and performance deltas. If this framework helped improve your game performance, consider starring the repository!
