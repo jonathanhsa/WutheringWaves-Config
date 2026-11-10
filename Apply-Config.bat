@@ -1,9 +1,9 @@
 @echo off
 setlocal enabledelayedexpansion
-title Wuthering Waves - Config Switcher
+title Wuthering Waves - Ultimate Optimization Switcher
 
 echo ========================================================
-echo      WUTHERING WAVES ENGINE CONFIGURATION SWITCHER      
+echo      WUTHERING WAVES ULTIMATE OPTIMIZATION SWITCHER      
 echo ========================================================
 echo.
 
@@ -69,7 +69,7 @@ if not exist "%GAME_PATH%" (
 :MENU
 cls
 echo ========================================================
-echo      WUTHERING WAVES ENGINE CONFIGURATION SWITCHER      
+echo      WUTHERING WAVES ULTIMATE OPTIMIZATION SWITCHER      
 echo ========================================================
 echo Target: "%GAME_PATH%"
 echo.

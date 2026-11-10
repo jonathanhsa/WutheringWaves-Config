@@ -1,6 +1,6 @@
 <div align="center">
 
-# Wuthering Waves: Engine Configuration Framework
+# Wuthering Waves: Ultimate Optimization & Performance Suite
 
 [![Game: Wuthering Waves](https://img.shields.io/badge/Game-Wuthering%20Waves-0ea5e9?style=flat-square&labelColor=0f172a)](https://wutheringwaves.kurogames.com/)
 [![Engine: Unreal Engine 4](https://img.shields.io/badge/Engine-Unreal%20Engine%204.26-6366f1?style=flat-square&labelColor=1e1b4b)](https://www.unrealengine.com/)
@@ -9,7 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-10b981?style=flat-square&labelColor=064e3b)](#)
 
 <p align="center">
-  <img src="https://files.catbox.moe/4ravx1.gif" width="125" alt="Welcome to WuWa Config Framework" />
+  <img src="https://files.catbox.moe/4ravx1.gif" width="125" alt="Welcome to Wuthering Waves Optimization Suite" />
 </p>
 
 A precision-engineered suite of `Engine.ini` performance profiles and **Frame Generation mods** for **Wuthering Waves** (Unreal Engine 4). Designed to eliminate traversal hitches, enforce asynchronous shader pre-caching, stabilize frame delivery, and double framerates across all PC hardware tiers.
