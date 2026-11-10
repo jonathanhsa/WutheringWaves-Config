@@ -334,13 +334,13 @@ Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)<
 - Deploy the **`06 - CONFIG ULTRA EXTREME (WARNING)`** profile with discretion. Ensure adequate thermal headroom on your system, as it imposes substantial rendering stress on the GPU rasterization core and VRAM sub-systems.
 
 > [!NOTE]
-> ### 💬 A Personal Note from the Creator
+> ### A Personal Note from the Creator
 > 
 > **[ID] Bahasa Indonesia:**  
-> *"Proyek ini saya buat dengan sepenuh hati karena saya pernah merasakan sendiri betapa frustrasinya bermain di perangkat spek ultra-low yang patah-patah dan nge-lag parah. Melalui repositori ini, saya ingin membagikan apa yang saya bisa agar sesama Rover dapat menikmati dunia Solaris-3 dengan lancar dan nyaman, apa pun spesifikasi hardware yang kalian miliki."*
+> *"Jujur, proyek ini gw buat bener-bener dari hati karena gw pernah ngerasain sendiri suramnya main di device spek ultra low—patah-patah, drop fps, sampe nge-lag parah gak karuan. Lewat config ini, gw pengen bagiin semua optimasi terbaik yang gw bisa biar lu semua sesama Rover tetep bisa enjoy explore Solaris-3 dengan lancar dan nyaman, gak peduli se-kentang apa pun device lu."*
 > 
 > **[EN] English:**  
-> *"I built this project with all my heart because I've experienced firsthand the struggle of playing on low-end hardware with agonizing stutters and unplayable frame drops. Through this optimization suite, I want to give back everything I can so that every Rover can explore Solaris-3 smoothly, regardless of their hardware tier."*
+> *"I built this project wholeheartedly because I've experienced firsthand the struggle of playing on low-end potato devices with constant stutters and unplayable frame drops. Through this optimization suite, I want to share the best tweaks I can offer so that every fellow Rover can explore Solaris-3 smoothly and comfortably, no matter what PC you're rocking."*
 > 
 > — **JonathanHS**
 
