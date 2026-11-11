@@ -14,6 +14,7 @@
 [![Shader Cache](https://img.shields.io/badge/Shader%20Cache-Async%20Pipeline-06b6d4?style=flat-square&labelColor=164e63)](#)
 [![Safety](https://img.shields.io/badge/Safety-100%25%20Client--Side-10b981?style=flat-square&labelColor=064e3b)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square&labelColor=14532d)](#)
+[![Ko-fi: Support](https://img.shields.io/badge/Ko--fi-Support-ff5e5b?style=flat-square&logo=ko-fi&logoColor=white&labelColor=4a1525)](https://ko-fi.com/jonathanssa)
 
 <p align="center">
   <img src="https://files.catbox.moe/4ravx1.gif" width="125" alt="Welcome to Wuthering Waves Optimization Suite" />
@@ -473,3 +474,15 @@ Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)<
 </div>
 
 Technical proposals, benchmarks, and cvar refinements are welcome! Please open an **Issue** or submit a **Pull Request** documenting tested hardware specifications and performance deltas. If this framework helped improve your game performance, consider starring the repository!
+
+<br>
+
+<div align="center">
+
+<a href="https://ko-fi.com/jonathanssa" target="_blank" rel="noopener noreferrer">
+  <img src="./assets/kofi-widget.svg" width="310" alt="Buy Me a Coffee on Ko-fi" />
+</a>
+
+<p><sub>Enjoying the FPS boost? Fuel future engine updates and optimizations with a cup of coffee! ☕</sub></p>
+
+</div>
