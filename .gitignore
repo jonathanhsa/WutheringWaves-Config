@@ -20,8 +20,9 @@ $RECYCLE.BIN/
 *.7z
 *.tar.gz
 
-# Local media
+# Local media & binaries
 *.gif
+*.exe
 
 
 

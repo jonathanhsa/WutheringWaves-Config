@@ -2,18 +2,20 @@
 
 # Wuthering Waves: Ultimate Optimization & Performance Suite
 
-[![Game: Wuthering Waves](https://img.shields.io/badge/Game-Wuthering%20Waves-0ea5e9?style=flat-square&labelColor=0f172a)](https://wutheringwaves.kurogames.com/)
-[![Engine: Unreal Engine 4](https://img.shields.io/badge/Engine-Unreal%20Engine%204.26-6366f1?style=flat-square&labelColor=1e1b4b)](https://www.unrealengine.com/)
+[![Game: Wuthering Waves](https://img.shields.io/badge/Game-Wuthering%20Waves-0284c7?style=flat-square&labelColor=082f49)](https://wutheringwaves.kurogames.com/)
+[![Engine: Unreal Engine 4](https://img.shields.io/badge/Engine-Unreal%20Engine%204.26-6366f1?style=flat-square&logo=unrealengine&logoColor=white&labelColor=1e1b4b)](https://www.unrealengine.com/)
+[![Platform: Windows](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011%20(64--bit)-0078d4?style=flat-square&logo=windows&logoColor=white&labelColor=002040)](#)
 [![DirectX](https://img.shields.io/badge/DirectX-DX11%20%7C%20DX12-059669?style=flat-square&labelColor=064e3b)](#)
-[![Platform: Windows](https://img.shields.io/badge/Platform-Windows%2064--bit-0078D4?style=flat-square&labelColor=0c4a6e)](#)
-[![Hardware](https://img.shields.io/badge/Hardware-NVIDIA%20%7C%20AMD%20%7C%20Intel-7c3aed?style=flat-square&labelColor=2e1065)](#)
+[![Hardware](https://img.shields.io/badge/Hardware-NVIDIA%20%7C%20AMD%20%7C%20Intel-4f46e5?style=flat-square&labelColor=1e1b4b)](#)
+[![Status](https://img.shields.io/badge/Game%20Version-v3.0%20--%20v3.6%2B%20Ready-e11d48?style=flat-square&labelColor=4c0519)](#)
 <br>
-[![Frame Gen: OptiScaler](https://img.shields.io/badge/Frame%20Gen-OptiScaler%20%7C%20FSR%203-d946ef?style=flat-square&labelColor=581c87)](#frame-generation-setup-optiscaler--fsr-3)
+[![Frame Gen: OptiScaler](https://img.shields.io/badge/Frame%20Gen-OptiScaler%20%7C%20FSR%203-d946ef?style=flat-square&labelColor=500724)](#frame-generation-setup-optiscaler--fsr-3)
 [![Upscaling](https://img.shields.io/badge/Upscaling-DLSS%20%7C%20FSR%20%7C%20XeSS-8b5cf6?style=flat-square&labelColor=3b0764)](#)
 [![Target FPS](https://img.shields.io/badge/Target%20FPS-60%20--%20120%2B%20FPS-f59e0b?style=flat-square&labelColor=451a03)](#)
-[![Shader Cache](https://img.shields.io/badge/Shader%20Cache-Async%20Pipeline-06b6d4?style=flat-square&labelColor=164e63)](#)
-[![Safety](https://img.shields.io/badge/Safety-100%25%20Client--Side-10b981?style=flat-square&labelColor=064e3b)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square&labelColor=14532d)](#)
+[![Shader Cache](https://img.shields.io/badge/Shader%20Pipeline-Async%20Pre--Cache-06b6d4?style=flat-square&labelColor=083344)](#)
+[![Stability](https://img.shields.io/badge/Stability-Anti--Flicker%20Guarded-14b8a6?style=flat-square&labelColor=042f2e)](#)
+[![Safety](https://img.shields.io/badge/Safety-100%25%20Client--Side-10b981?style=flat-square&labelColor=052e16)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-84cc16?style=flat-square&labelColor=1a2e05)](#)
 [![Ko-fi: Support](https://img.shields.io/badge/Ko--fi-Support-ff5e5b?style=flat-square&logo=ko-fi&logoColor=white&labelColor=4a1525)](https://ko-fi.com/jonathanssa)
 
 <p align="center">
@@ -74,12 +76,12 @@ Each profile targets a distinct balance between draw call efficiency, texture st
 
 | Profile Directory | Target Hardware Class | Rendering Features | Resolution Scale | Target Framerate |
 | :--- | :--- | :--- | :--- | :--- |
-| `01 - CONFIG ULTRA LOW` | Dual/Quad Core, 4-8GB RAM, Intel HD / UHD | Shadows OFF, Foliage OFF, Fog OFF, Minimal Particles | 65% + Sharpening | 30 - 60 FPS |
-| `02 - CONFIG LOW` | 4-Core CPU, 8GB RAM, iGPU 2GB VRAM | 1 Cascade (512p), Fog OFF, 1000MB Texture Pool | 85% + Sharpening | 45 - 60 FPS |
-| `03 - CONFIG MED` | 4-6 Core, 8-16GB RAM, Dedicated 4GB VRAM | 2 Cascades (1024p), Light AO/SSR, 75% Density | 100% Native | 60 FPS Stable |
-| `04 - CONFIG HIGH` | 6+ Core, 16GB RAM, Dedicated 6-8GB VRAM | 3 Cascades (2048p), Volumetric Fog, AO Level 2 | 100% Native | 60 - 120 FPS |
-| `05 - CONFIG VERY HIGH` | 8+ Core, 16-32GB RAM, Dedicated 8-12GB VRAM | 4 Cascades (3072p), Dense Fog Grid, 150% Distance | 100% Native | 120+ FPS |
-| `06 - CONFIG ULTRA EXTREME (WARNING)` | Flagship Rigs (RTX 4080/4090, RX 7900 XTX) | 6 Cascades (4096p), 250% Foliage, Locked LOD 0 | 125% Supersampling | Uncapped / Cinematic |
+| `01 - CONFIG ULTRA LOW` | Dual/Quad Core, 4-8GB RAM, Intel HD / UHD | Shadows OFF, Foliage OFF, Fog OFF, Minimal Particles | 70% + Sharpening | 30 - 60 FPS |
+| `02 - CONFIG LOW` | 4-Core CPU, 8GB RAM, iGPU 2GB VRAM | 1 Cascade (512p), Fog OFF, 1200MB Texture Pool | 85% + Sharpening | 45 - 60 FPS |
+| `03 - CONFIG MED` | 4-6 Core, 8-16GB RAM, Dedicated 4GB VRAM | 2 Cascades (1024p), Light AO/SSR, Full-FPS Animations | 100% Native | 60 FPS Stable |
+| `04 - CONFIG HIGH` | 6+ Core, 16GB RAM, Dedicated 6-8GB VRAM | 3 Cascades (2048p), Volumetric Fog, Distance Field Shadows | 100% Native | 60 - 120 FPS |
+| `05 - CONFIG VERY HIGH` | 8+ Core, 16-32GB RAM, Dedicated 8-12GB VRAM | 4 Cascades (3072p), Dense Fog Grid, Full-Res Particles | 100% Native | 120+ FPS |
+| `06 - CONFIG ULTRA EXTREME (WARNING)` | Flagship Rigs (RTX 4080/4090, RX 7900 XTX) | 5 Cascades (4096p), 200% Foliage, Lumen Reflections | 100% Native | Uncapped / Cinematic |
 
 ---
 
@@ -93,24 +95,28 @@ Detailed side-by-side comparison of Unreal Engine 4 rendering parameters across 
 
 | Rendering Feature / Console Variable (cVar) | `01 - ULTRA LOW` | `02 - LOW` | `03 - MED` | `04 - HIGH` | `05 - VERY HIGH` | `06 - ULTRA EXTREME` |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Internal Render Scale** (`r.ScreenPercentage`) | **65%** | **85%** | **100% (Native)** | **100% (Native)** | **100% (Native)** | **125% (Supersampling)** |
+| **Internal Render Scale** (`r.ScreenPercentage`) | **70%** | **85%** | **100% (Native)** | **100% (Native)** | **100% (Native)** | **100% (Native)** |
 | **Tonemapper Sharpen** (`r.Tonemapper.Sharpen`) | **0.8 (Aggressive)** | 0.5 | 0.4 | 0.3 | 0.25 | 0.2 |
 | **Anti-Aliasing** (`r.PostProcessAAQuality`) | **OFF (0)** | TAA Level 2 | TAA Level 2 | TAA Level 3 | TAA Level 4 | **TAA Level 4 (Max)** |
 | **Dynamic Shadow Quality** (`r.ShadowQuality`) | **OFF (0)** | Level 1 | Level 2 | Level 3 | Level 4 | **Level 5 (Ultra)** |
-| **Shadow Cascades** (`r.Shadow.CSM.MaxCascades`) | **0 (None)** | 1 Cascade | 2 Cascades | 3 Cascades | 4 Cascades | **6 Cascades (4K Split)** |
+| **Shadow Cascades** (`r.Shadow.CSM.MaxCascades`) | **0 (None)** | 1 Cascade | 2 Cascades | 3 Cascades | 4 Cascades | **5 Cascades (4K Split)** |
 | **Shadow Buffer Resolution** (`r.Shadow.MaxResolution`) | 128p | 512p | 1024p | 2048p (2K) | 3072p (3K) | **4096p (4K UHD)** |
-| **Shadow Distance Scale** (`r.Shadow.DistanceScale`) | 0.2x | 0.6x | 0.85x | 1.2x | 1.5x | **3.0x (300% Distance)** |
-| **Contact Shadows & Distance Field Shadowing** | ❌ OFF | ❌ OFF | ❌ OFF | ✅ Enabled (1) | ✅ Enabled (1) | ✅ Enabled (1) |
-| **Volumetric Fog & 3D Cloud Pass** | ❌ OFF | ❌ OFF | ❌ OFF | ✅ Voxel (16x64) | ✅ Dense Voxel (8x128) | ✅ Ultra Dense (4x256) |
+| **Shadow Distance Scale** (`r.Shadow.DistanceScale`) | 0.2x | 0.6x | 0.85x | 1.2x | 1.5x | **2.0x (200% Distance)** |
+| **Distance Field Shadowing & Contact Shadows** | ❌ OFF | ❌ OFF | ❌ OFF | ✅ DF Quality 2 | ✅ DF Quality 3 | ✅ DF Quality 3 |
+| **Volumetric Fog & 3D Cloud Pass** | ❌ OFF | ❌ OFF | ❌ OFF | ✅ Voxel (16x64) | ✅ Dense Voxel (8x128) | ✅ Ultra Dense (6x256) |
 | **Ambient Occlusion** (`r.AmbientOcclusionLevels`) | ❌ OFF (0) | ❌ OFF (0) | Level 1 | Level 2 | Level 3 | **Level 3 (Max Quality 100)** |
 | **Screen Space Reflections** (`r.SSR.Quality`) | ❌ OFF (0) | ❌ OFF (0) | Quality 1 | Quality 2 | Quality 3 | **Quality 4 (Max Roughness 1.0)** |
-| **Foliage & Grass Density** (`foliage` / `grass`) | **0% (Stripped)** | 50% | 75% | 100% (Full) | 125% (Dense) | **250% (Jungle Overgrowth)** |
-| **World View Distance** (`r.ViewDistanceScale`) | 50% (0.5x) | 75% (0.75x) | 90% (0.9x) | 120% (1.2x) | 150% (1.5x) | **300% (3.0x Max Horizon)** |
-| **Static Mesh LOD Distance** (`StaticMeshLOD...`) | 2.5 (Aggressive Low) | 1.2 | 1.1 | 1.0 (Standard) | 0.8 (High Detail) | **0.1 (Permanent LOD 0)** |
-| **Skeletal Mesh (Character) LOD Bias** | +3 (Lowest Poly) | +1 | 0 (Native) | 0 (Native) | 0 (Native) | **-2 (Max Polygon Cap)** |
+| **Foliage & Grass Density** (`foliage` / `grass`) | **0% (Stripped)** | 50% | 75% | 100% (Full) | 125% (Dense) | **200% (Lush Density)** |
+| **World View Distance** (`r.ViewDistanceScale`) | 50% (0.5x) | 75% (0.75x) | 90% (0.9x) | 120% (1.2x) | 150% (1.5x) | **250% (2.5x Horizon)** |
+| **Static Mesh LOD Distance (Anti-Flicker)** | 1.6 (Optimized) | 1.2 | 1.0 (Standard) | 0.85 (High) | 0.75 (Epic) | **0.65 (Anti-Flicker Guard)** |
+| **Skeletal Mesh (Character) LOD Bias** | +3 (Lowest Poly) | +1 | 0 (Native) | 0 (Native) | 0 (Native) | **-1 (Max Polygon Cap)** |
+| **GPU Video Hardware Decoding** | ✅ GPU Decode (0) | ✅ GPU Decode (0) | ✅ GPU Decode (0) | ✅ GPU Decode (0) | ✅ GPU Decode (0) | ✅ GPU Decode (0) |
+| **Parallel Frustum Culling (No White Spots)** | ✅ Enabled (1) | ✅ Enabled (1) | ✅ Enabled (1) | ✅ Enabled (1) | ✅ Enabled (1) | ✅ Enabled (1) |
+| **Full Animation Framerate in Hubs (`a.URO`)** | Stock (1) | Stock (1) | ✅ Unlocked (0) | ✅ Unlocked (0) | ✅ Unlocked (0) | ✅ Unlocked (0) |
 | **Combat Particles Limit (CPU / GPU per Frame)** | 10 / 16 | 300 / 256 | 600 / 512 | 1000 / 1024 | 1800 / 2048 | **5000 / 8192** |
 | **Niagara Particle Quality Level** | Level 0 | Level 0 | Level 1 | Level 2 | Level 3 | **Level 4** |
-| **Texture Streaming Pool** (`r.Streaming.PoolSize`) | **400 MB** | **1,000 MB** | **2,200 MB** | **4,500 MB** | **6,500 MB** | **12,000 MB (12 GB VRAM)** |
+| **Texture Streaming Pool** (`r.Streaming.PoolSize`) | **500 MB** | **1,200 MB** | **2,400 MB** | **4,200 MB** | **6,500 MB** | **10,000 MB (10 GB VRAM)** |
+| **Ray Tracing / Lumen Reflections** | N/A | N/A | N/A | N/A | N/A | **Async Compute + ScreenTraces 0** |
 | **Anisotropic Filtering** (`r.MaxAnisotropy`) | Default | Default | Default | Default | Default | **16x Forced Engine-wide** |
 | **Shader Cache Pre-compile Batch Size** | 15 | 30 | 50 | 100 | 150 | **300** |
 
@@ -131,18 +137,21 @@ Specially engineered for low-specification machines, dual/quad-core processors, 
 - **Vegetation & Grass Stripped**: Procedural foliage and grass density are reduced to zero (`foliage.DensityScale=0`, `grass.DensityScale=0`), completely removing grass blade rendering across the terrain.
 - **Atmospheric Passes Disabled**: Volumetric fog, 3D volumetric clouds, and light shafts (god rays) are turned off (`=0`) to eliminate heavy rasterizer load on integrated graphics.
 - **Occlusion & Reflections Disabled**: Ambient Occlusion (`r.AmbientOcclusionLevels=0`) and Screen Space Reflections (`r.ScreenSpaceReflections=0`) are completely disabled.
-- **Heavy Post-Processing Stripped**: Bloom, Lens Flare, Eye Adaptation, Translucency Volume Blur, Motion Blur, Depth of Field, Chromatic Aberration, and Film Grain are all set to 0.
+- **Heavy Post-Processing Stripped**: Blinding FFT bloom (`r.Kuro.KuroEnableFFTBloom=0`, `r.Kuro.KuroBloomStreak=0`), Niagara radial combat blur (`r.Kuro.NiagaraBlur.Enable=0`), Lens Flare, Depth of Field, Chromatic Aberration, and Film Grain are all disabled.
 - **Anti-Aliasing Disabled**: Post-processing anti-aliasing is turned off (`r.PostProcessAAQuality=0`, `r.DefaultFeature.AntiAliasing=0`) for the lowest possible input latency and zero shader overhead.
-- **Aggressive Geometry & Mesh LOD Reduction**: World view distance is halved (`r.ViewDistanceScale=0.5`). Static mesh LOD distance scaling is aggressively pushed out (`r.StaticMeshLODDistanceScale=2.5`), and skeletal meshes (character models) are locked to their lowest-polygon LOD (`r.SkeletalMeshLODBias=3`).
 - **Combat Particles Strictly Capped**: Combat effects are capped to just 10 CPU particles and 16 GPU particles per frame (`fx.Niagara.QualityLevel=0`), preventing combat hitching during chaotic mob encounters.
-- **Conservative 400MB Texture Cache**: Texture streaming pool is constrained to 400MB (`r.Streaming.PoolSize=400`) with MipMap LOD Bias +1, preventing Windows swapfile paging spikes and Out-of-Memory (OOM) crashes on 4GB–8GB RAM setups.
-- **Internal Resolution Downscaled to 65%**: Internal rendering resolution is reduced to 65% of native display resolution (`r.ScreenPercentage=65`).
+- **Conservative 500MB Texture Cache**: Texture streaming pool is constrained to 500MB (`r.Streaming.PoolSize=500`), preventing Windows swapfile paging spikes and Out-of-Memory (OOM) crashes on 4GB–8GB RAM setups.
+- **Internal Resolution Downscaled to 70%**: Internal rendering resolution is reduced to 70% of native display resolution (`r.ScreenPercentage=70`).
 
 #### 🔺 Elements Added / Enhanced (Engine Optimizations):
-- **Aggressive Tonemapper Sharpening Filter**: Sharpness is boosted to 0.8 (`r.Tonemapper.Sharpen=0.8`) to restore image clarity and edge definition lost to the 65% resolution scale.
+- **GPU Hardware Video Decoding**: Forces hardware video decoding (`Electra.PC.UseSoftwareDecoding=0`), offloading cutscene playback and burst animation rendering from the CPU to the GPU.
+- **Anti-Flicker LOD Guardrail**: Static mesh LOD distance scaling tuned to `1.6` (`r.StaticMeshLODDistanceScale=1.6`), giving high framerates while preventing distant objects from abruptly disappearing.
+- **Foliage Draw Call Optimization**: Draw call optimization for foliage density LOD is active (`foliage.DensityScaleLOD.DrawCallOptimize=1`).
+- **Parallel Frustum Culling**: Toggles multithreaded frustum culling (`r.ParallelFrustumCull=1`) to eliminate camera swing white spots and visual pop-in.
+- **Aggressive Tonemapper Sharpening Filter**: Sharpness is boosted to 0.8 (`r.Tonemapper.Sharpen=0.8`) to restore image clarity and edge definition lost to the 70% resolution scale.
 - **Asynchronous Shader Pre-caching**: Engine asynchronous shader pipeline caching is activated (`r.CreateShadersOnLoad=1`, `r.Shaders.Optimize=1`, batch size 15) to minimize traversal hitches and shader compilation drops.
 - **Multi-threaded CPU Render Pipeline**: Forces Unreal Engine to utilize all available CPU cores via parallel draw pass setup and RHI worker threads (`r.ParallelRendering=1`, `r.MeshDrawCommands.ParallelPassSetup=1`, `r.RHICmdUseThread=1`, `r.RHICmdUseDeferredContexts=1`).
-- **Memory Safety Guardrails**: Enforces hard VRAM pool limits (`r.Streaming.LimitPoolSizeToVRAM=1`) and Hierarchical LOD Strategy 2 to prevent crash-to-desktop events.
+- **Memory Safety Guardrails**: Enforces hard VRAM pool limits (`r.Streaming.LimitPoolSizeToVRAM=1`) and Kuro streaming priority (`r.Streaming.UsingKuroStreamingPriority=3`).
 
 ---
 
@@ -161,12 +170,16 @@ Calibrated specifically for modern laptops and desktops running integrated GPUs 
 - **Vegetation Density Halved**: Grass and tree density are reduced by 50% (`foliage.DensityScale=0.5`, `grass.DensityScale=0.5`).
 - **Draw Distance Capped at 75%**: World view distance is scaled to 75% (`r.ViewDistanceScale=0.75`), with static mesh LOD scale 1.2 and skeletal mesh LOD bias 1.
 - **Cinematic Passes Disabled**: Motion Blur, Depth of Field, Lens Flare, and Translucency Volume Blur remain disabled (`=0`).
+- **Blinding Passes Removed**: FFT bloom and Niagara radial combat blur disabled for clean visual contrast.
 - **Internal Resolution Scaled to 85%**: Render scale is tuned to 85% (`r.ScreenPercentage=85`), providing necessary breathing room on 1080p and 720p screens.
-- **Strict 1000MB Texture Pool**: Texture streaming cache is capped at 1000MB (`r.Streaming.PoolSize=1000`), ensuring dynamic VRAM carving does not starve system RAM.
+- **Strict 1200MB Texture Pool**: Texture streaming cache is capped at 1200MB (`r.Streaming.PoolSize=1200`), ensuring dynamic VRAM carving does not starve system RAM.
 
 #### 🔺 Elements Added / Restored:
+- **GPU Hardware Video Decoding**: Forces hardware video decoding (`Electra.PC.UseSoftwareDecoding=0`) for stutter-free cutscenes.
 - **Smooth Temporal Anti-Aliasing (TAA Level 2)**: Re-enables TAA at Level 2 (`r.PostProcessAAQuality=2`, CurrentFrameWeight 0.25) to eliminate pixel shimmer and jagged edges without heavy GPU penalty.
 - **Restored Dynamic Grounding Shadows**: Single-cascade dynamic shadows restore essential depth, preventing characters and enemies from appearing to float.
+- **Parallel Frustum Culling**: Multithreaded frustum culling enabled (`r.ParallelFrustumCull=1`) to eliminate white flashes during fast camera turns.
+- **Foliage Draw Call Optimization**: `foliage.DensityScaleLOD.DrawCallOptimize=1` keeps foliage batch overhead minimal.
 - **Restored Eye Adaptation & Subtle Bloom**: Eye adaptation (`r.EyeAdaptationQuality=1`), Bloom Level 1, and Tonemapper Quality 1 are restored for smooth outdoor-to-indoor lighting transitions.
 - **Compensatory Tonemapper Sharpening (0.5)**: Tonemapper sharpen is set to 0.5 (`r.Tonemapper.Sharpen=0.5`) to preserve crisp character edges at 85% render scale.
 - **Expanded Combat Particle Budget**: Particle headroom is expanded to 300 CPU particles and 256 GPU particles per frame, ensuring skill animations and visual burst cues remain clear during combat.
@@ -190,12 +203,15 @@ A balanced configuration engineered to lock a stable **60 FPS** on entry-level d
 
 #### 🔺 Elements Added / Enhanced:
 - **100% Native Render Scale**: Renders at 100% native display resolution (`r.ScreenPercentage=100`), delivering crisp, pixel-perfect visuals without upsampling artifacts.
-- **Ambient Occlusion Enabled**: Level 1 Ambient Occlusion (`r.AmbientOcclusionLevels=1`) adds subtle, natural contact shading under crevices, clothing folds, and objects.
-- **Screen Space Reflections (SSR Enabled)**: Real-time reflections on water surfaces, puddles, and reflective tiles are activated (`r.ScreenSpaceReflections=1`, `r.SSR.Quality=1`, `r.RefractionQuality=1`).
-- **Crisp 2-Cascade Shadows (1024p)**: Shadow resolution is doubled to 1024x1024 with 2 cascades (`r.ShadowQuality=2`, `r.Shadow.CSM.MaxCascades=2`, DistanceScale 0.85).
+- **Full Animation Framerate in Hub Cities**: Disables Update Rate Optimization (`a.URO.Enable=0`, `a.URO.EnableScreenRatio=0`), completely restoring full 60 FPS character and NPC animations in Jinzhou, Rinascita, and crowded settlements.
+- **Parallel Frustum Culling**: Enabled (`r.ParallelFrustumCull=1`) to eliminate camera swing white spots and geometry pop-in.
+- **GPU Hardware Video Decoding**: Active (`Electra.PC.UseSoftwareDecoding=0`) for lag-free cinematic sequences.
+- **Ambient Occlusion Enabled**: Level 1 Ambient Occlusion (`r.AmbientOcclusionLevels=1`, Intensity 0.9) adds subtle, natural contact shading under crevices, clothing folds, and objects.
+- **Screen Space Reflections (SSR Enabled)**: Real-time reflections on water surfaces, puddles, and reflective tiles are activated with full roughness range (`r.ScreenSpaceReflections=1`, `r.SSR.Quality=1`, `r.SSR.MaxRoughness=1.0`).
+- **Crisp 2-Cascade Shadows (1024p)**: Shadow resolution is doubled to 1024x1024 with 2 cascades (`r.ShadowQuality=2`, `r.Shadow.CSM.MaxCascades=2`, DistanceScale 0.85) and per-object character shadow resolution of 1024 (`r.Shadow.PerObjectResolutionMax=1024`).
 - **Lighting & Atmospheric Rays**: Light shafts (god rays) enabled (`r.LightShaftQuality=1`), Bloom Level 2, Lens Flare Level 1, and Light Function Quality Level 1.
-- **Full Model Detail (LOD 0 Characters)**: Characters are rendered at full polygon detail with zero mesh bias (`r.SkeletalMeshLODBias=0`), static mesh LOD scale 1.1.
-- **2,200MB Dedicated Texture Pool**: Texture streaming cache allocated to 2,200MB (`r.Streaming.PoolSize=2200`), maximizing 4GB VRAM throughput without texture streaming hitches.
+- **Full Model Detail (LOD 0 Characters)**: Characters are rendered at full polygon detail with zero mesh bias (`r.SkeletalMeshLODBias=0`), standard static mesh LOD scale 1.0.
+- **2,400MB Dedicated Texture Pool**: Texture streaming cache allocated to 2,400MB (`r.Streaming.PoolSize=2400`), maximizing 4GB VRAM throughput without texture streaming hitches.
 - **Expanded Particle Budget**: Raised to 600 CPU and 512 GPU particles per frame with Niagara Quality Level 1.
 
 ---
@@ -213,13 +229,17 @@ Targets high visual fidelity with deep dynamic lighting and rich environmental d
 - **Optimized Voxel Fog Grid**: Voxel grid resolution is tuned for optimal performance (`GridPixelSizeK=16`, `GridSizeZ=64`), providing atmospheric fog without sacrificing high refresh rates.
 
 #### 🔺 Significant Elements Added & Enhanced:
+- **NVIDIA Reflex Low Latency Mode**: Engine-level Reflex low latency integration enabled (`t.Streamline.Reflex.Enable=1`) for ultra-responsive combat dodging and parrying.
 - **Full Volumetric Fog & 3D Clouds**: Volumetric fog and 3D cloud layers activated (`r.VolumetricFog=1`, `r.VolumetricCloud=1`), producing dramatic sunbeams (god rays) streaming through cliffs and tree canopies.
 - **2K Shadows with 3 Cascades**: Shadow buffers upgraded to 2048x2048 across 3 cascades (`r.Shadow.MaxResolution=2048`, `r.Shadow.CSM.MaxCascades=3`), with shadow projection distance expanded to 120% (`r.Shadow.DistanceScale=1.2`).
-- **Contact Shadows & Distance Field Shadowing**: Enabled (`r.ContactShadows=1`, `r.DistanceFieldShadowing=1`), rendering sharp micro-shadows beneath pebbles, foliage, character hair, and armor.
-- **High-Tier Ambient Occlusion & SSR**: AO increased to Level 2 (`r.AmbientOcclusionLevels=2`), SSR upgraded to Quality 2, and Translucency Volume Blur enabled (`=1`).
-- **100% Full Vegetation & 120% View Distance**: Foliage and grass density restored to full 100% (`foliage.DensityScale=1.0`, `grass.DensityScale=1.0`), view distance scaled to 120% (`r.ViewDistanceScale=1.2`), and industry-standard static mesh LOD 1.0.
+- **Contact Shadows & Distance Field Shadowing**: Enabled (`r.ContactShadows=1`, `r.DistanceFieldShadowing=1`, `r.DFShadowQuality=2`), rendering sharp micro-shadows beneath pebbles, foliage, character hair, and armor.
+- **Extended Foliage Cull Distances**: Foliage culling distances pushed far out (`r.Kuro.Foliage.NearCullDistanceMax=9750`, `FarCullDistanceMax=22500`, `Grass3_0CullDistanceMax=30000`) with `foliage.DensityScaleLOD.DrawCallOptimize=1`.
+- **Full Hub Animations**: Update Rate Optimization disabled (`a.URO.Enable=0`, `a.URO.EnableScreenRatio=0`), eliminating low-FPS character stutters in Jinzhou and Rinascita.
+- **Parallel Frustum Culling**: Multithreaded frustum culling enabled (`r.ParallelFrustumCull=1`).
+- **High-Tier Ambient Occlusion & SSR**: AO increased to Level 2 (`r.AmbientOcclusionLevels=2`), SSR upgraded to Quality 2 with `r.SSR.MaxRoughness=1.0`.
+- **100% Full Vegetation & 120% View Distance**: Foliage and grass density restored to full 100% (`foliage.DensityScale=1.0`, `grass.DensityScale=1.0`), view distance scaled to 120% (`r.ViewDistanceScale=1.2`), and tight static mesh LOD 0.85.
 - **Level 3 Anti-Aliasing**: PostProcessAAQuality=3 with TAA frame weight 0.20 for smooth edge definition without temporal smearing.
-- **4,500MB Dedicated Texture Pool**: 4.5GB texture cache allocated (`r.Streaming.PoolSize=4500`, Streaming Boost 1) for instantaneous high-resolution texture streaming.
+- **4,200MB Dedicated Texture Pool**: 4.2GB texture cache allocated (`r.Streaming.PoolSize=4200`, Streaming Boost 1) for instantaneous high-resolution texture streaming.
 - **Dynamic Combat Particles**: Raised to 1000 CPU and 1024 GPU particles per frame, Niagara Quality Level 2, Bloom Level 3, and Lens Flare 2.
 
 ---
@@ -238,12 +258,17 @@ Engineered for enthusiast rigs and high-refresh-rate displays (120Hz – 165Hz+)
 
 #### 🔺 Enthusiast Elements Added & Enhanced:
 - **3K Crisp Shadows with 4 Cascades**: Shadow resolution elevated to 3072x3072 with 4 cascading splits (`r.Shadow.MaxResolution=3072`, `r.Shadow.CSM.MaxCascades=4`), with shadow distance extended to 150% (`r.Shadow.DistanceScale=1.5`, RadiusThreshold 0.02) to keep distant structures sharply shadowed.
+- **Epic Distance Field Shadows**: Quality set to Level 3 (`r.DistanceFieldShadowing=1`, `r.DFShadowQuality=3`).
 - **2x Denser Voxel Fog Grid**: Fog voxel grid resolution doubled (`GridPixelSizeK=8`, `GridSizeZ=128`), producing silky-smooth volumetric light scattering without voxel grid banding.
+- **Full-Resolution Translucency Pass**: Enabled (`r.KuroDownsampleTranslucencyFullRes=true`) to preserve pristine sharpness during spectacular elemental burst skills.
+- **Full-Resolution Scene Reflections**: HalfResSceneColor disabled (`r.SSR.HalfResSceneColor=0`, `r.SSR.MaxRoughness=1.0`, Quality 3) for clean, high-definition puddle and water reflections.
 - **Dense Foliage (125%) & 150% View Distance**: Foliage and grass density increased to 125% (`foliage.DensityScale=1.25`, `grass.DensityScale=1.25`), with world view distance extended to 150% (`r.ViewDistanceScale=1.5`).
-- **Tighter Mesh LOD Scaling (0.8x)**: Static Mesh LOD distance scale tightened to 0.8 (`r.StaticMeshLODDistanceScale=0.8`), forcing distant 3D models to retain high-polygon assets much further out before switching LODs.
+- **Tighter Mesh LOD Scaling (0.75x)**: Static Mesh LOD distance scale tightened to 0.75 (`r.StaticMeshLODDistanceScale=0.75`), forcing distant 3D models to retain high-polygon assets much further out before switching LODs.
+- **NVIDIA Reflex Low Latency**: Enabled (`t.Streamline.Reflex.Enable=1`).
+- **Full Hub Animations & Zero Culling White Spots**: `a.URO.Enable=0`, `a.URO.EnableScreenRatio=0`, and `r.ParallelFrustumCull=1`.
 - **Maximum Ambient Occlusion & SSR**: AO increased to Level 3 (`r.AmbientOcclusionLevels=3`), SSR upgraded to Quality 3.
 - **Maximum Anti-Aliasing (Level 4)**: PostProcessAAQuality=4 with TAA frame weight 0.18.
-- **6,500MB Dedicated Texture Pool**: 6.5GB texture streaming cache (`r.Streaming.PoolSize=6500`) with high-speed 12-frame update cycles, completely eliminating texture pop-in.
+- **6,500MB Dedicated Texture Pool**: 6.5GB texture streaming cache (`r.Streaming.PoolSize=6500`) with high-speed update cycles, completely eliminating texture pop-in.
 - **Massive Combat Particle Allowance**: Raised to 1800 CPU and 2048 GPU particles per frame, Niagara Quality Level 3, supporting spectacle-heavy 120+ FPS combat.
 
 ---
@@ -254,21 +279,23 @@ Engineered for enthusiast rigs and high-refresh-rate displays (120Hz – 165Hz+)
   <img src="https://files.catbox.moe/omzl8c.gif" width="115" alt="Preset 6 Ultra Melter" />
 </div>
 
-An **uncompromised overkill profile** engineered exclusively for flagship hardware (RTX 4080, RTX 4090, RX 7900 XTX) and systems with 32GB–64GB of RAM. Strips away engine throttling and forces Unreal Engine 4 rendering subsystems to their absolute limits.
+An **uncompromising flagship profile** engineered exclusively for top-tier hardware (RTX 4080, RTX 4090, RX 7900 XTX) and systems with 32GB–64GB of RAM. Strips away engine throttling and unleashes Unreal Engine 4 rendering subsystems with dedicated anti-flicker stability guardrails.
 
-#### 🔻 Unconstrained / Zero-Compromise Guardrails:
-- **Zero Polygon LOD Degradation**: 3D mesh polygon degradation is completely disabled (`r.StaticMeshLODDistanceScale=0.1`, `r.SkeletalMeshLODBias=-2`). Every object, building, creature, and character across the entire world is permanently locked to highest-detail geometry (**LOD 0**) regardless of distance from the camera.
-- **VRAM Streaming Limit Removed**: VRAM pool bounds are unlocked (`r.Streaming.LimitPoolSizeToVRAM=0`). Texture cache is expanded to **12,000MB (12GB)** with massive streaming bursts of 120 textures per frame every 5 frames (zero texture loading latency).
-- **Direct Instant Memory Copy**: CPU-to-GPU memory copy throttling is disabled (`r.Streaming.AmortizeCPUToGPUCopy=0`), uploading high-resolution textures directly to VRAM without pipeline delay.
+#### 🔻 Anti-Flicker Guardrails & Unconstrained Hardware Allocation:
+- **Zero Ground Flickering Guardrail**: Static mesh LOD distance scale is calibrated to `0.65` (`r.StaticMeshLODDistanceScale=0.65`). In Wuthering Waves' engine build, values below 0.5 cause aggressive terrain z-fighting and severe ground texture strobing/flickering. At 0.65, distant objects retain maximum geometric detail while ground textures remain 100% rock-solid.
+- **Rock-Solid 100% Native Render Scale**: Renders at 100% native resolution (`r.ScreenPercentage=100`), eliminating sub-pixel temporal noise and supersampling pipeline hitches.
+- **10,000MB (10GB) Dedicated Texture Cache**: Texture pool expanded to 10,000MB (`r.Streaming.PoolSize=10000`) with uncapped streaming bandwidth, delivering instant asset streaming without VRAM thrashing.
 
-#### 🔺 Special Overkill Features Added:
-- **Internal 125% Supersampling**: Game renders internally at **125% native resolution** (`r.ScreenPercentage=125`) before downsampling to display resolution. Delivers pristine sub-pixel definition, geometric stability, and total eradication of fine edge shimmering.
-- **Cinematic 4K Shadows (4096p) with 6 Cascades**: 6 cascading splits with massive 4096x4096 buffers (`r.Shadow.MaxResolution=4096`, `r.Shadow.CSM.MaxCascades=6`, ShadowQuality=5). Shadow projection distance extended to 300% (`r.Shadow.DistanceScale=3.0`, RadiusThreshold 0.005) with 256 fade resolution.
-- **Ultra-Dense Voxel Fog Grid**: Fog voxel grid tightened to maximum fidelity (`GridPixelSizeK=4`, `GridSizeZ=256`), 4x denser than Very High, paired with high-quality volumetric cloud simulation (`r.VolumetricCloud.HighQuality=1`).
-- **250% Foliage Density & 300% View Distance**: Foliage and grass density boosted to **250% (2.5x)** (`foliage.DensityScale=2.5`, `grass.DensityScale=2.5`) with a **300% (3.0x)** horizon view distance (`r.ViewDistanceScale=3.0`), transforming the terrain into an ultra-lush wilderness.
-- **Raytrace-like Screen Space Reflections & AO**: SSR Quality Level 4 with `r.SSR.MaxRoughness=1.0` (reflections rendered across rough, matte surfaces). Ambient Occlusion Max Quality pushed to absolute maximum 100 (`r.AmbientOcclusionMaxQuality=100`, Levels=3).
+#### 🔺 Flagship Overkill Features Added:
+- **Lumen & Ray Traced Reflection Optimization**: Async compute Lumen reflections enabled (`r.Lumen.Reflections.AsyncCompute=1`), screen traces disabled (`r.Lumen.Reflections.ScreenTraces=0`) to permanently eliminate SSR-like blocky ghosting artifacts on characters, with smooth roughness bias (`r.Lumen.Reflections.SmoothBias=1.0`).
+- **Cinematic 4K Shadows (4096p) with 5 Cascades**: 5 cascading splits with massive 4096x4096 buffers (`r.Shadow.MaxResolution=4096`, `r.Shadow.CSM.MaxCascades=5`, ShadowQuality=5), 200% shadow projection distance (`r.Shadow.DistanceScale=2.0`, RadiusThreshold 0.01), and Level 3 Distance Field Shadows (`r.DFShadowQuality=3`).
+- **Atmospherics & God Rays**: Ultra-dense volumetric fog voxel grid (`GridPixelSizeK=6`, `GridSizeZ=256`), PC-quality Tyndall light shaft scattering (`r.TyndallScatteringQuality=1`, `r.LightShaftDownSampleFactor=1`), and high-quality volumetric cloud simulation (`r.VolumetricCloud.HighQuality=1`).
+- **Interactive Water Ripples**: C++ interaction water ripples enabled (`r.Kuro.InteractionEffect.UseCppWaterEffect=1`) when flying close or casting skills over water bodies.
+- **Extended Planned Loading Range**: `wp.Runtime.PlannedLoadingRangeScale=1.0` and `r.Kuro.NpcDisappearDistance=20000` for long-range asset retention.
+- **200% Foliage Density & 250% View Distance**: Foliage and grass density boosted to 200% (`foliage.DensityScale=2.0`, `grass.DensityScale=2.0`) with a 250% horizon view distance (`r.ViewDistanceScale=2.5`), transforming Solaris-3 into an ultra-lush wilderness.
 - **Forced 16x Anisotropic Filtering**: 16x texture anisotropic filtering enforced engine-wide (`r.MaxAnisotropy=16`), ensuring surface textures remain pin-sharp at oblique viewing angles.
-- **Particle Flood (5000 CPU / 8192 GPU)**: Particle caps unlocked to 5,000 CPU and 8,192 GPU particles per frame, Niagara Quality Level 4, Bloom Quality Level 4, and Lens Flare Level 3 for cinematic, CGI-tier combat simulation.
+- **Full Hub Animations & Zero Culling White Spots**: `a.URO.Enable=0`, `a.URO.EnableScreenRatio=0`, and `r.ParallelFrustumCull=1` ensure silky 60+ FPS NPC animations and zero geometry flashing when panning the camera.
+- **Particle Flood (5000 CPU / 8192 GPU)**: Particle caps unlocked to 5,000 CPU and 8,192 GPU particles per frame, Niagara Quality Level 4, Bloom Quality Level 4, and Lens Flare Level 3 for cinematic CGI-tier combat simulation.
 
 ---
 
