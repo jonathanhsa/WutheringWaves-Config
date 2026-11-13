@@ -22,7 +22,7 @@
   <img src="https://files.catbox.moe/4ravx1.gif" width="125" alt="Welcome to Wuthering Waves Optimization Suite" />
 </p>
 
-A precision-engineered suite of `Engine.ini` performance profiles and **Frame Generation mods** for **Wuthering Waves** (Unreal Engine 4). Designed to eliminate traversal hitches, enforce asynchronous shader pre-caching, stabilize frame delivery, and double framerates across all PC hardware tiers.
+A precision-engineered **Wuthering Waves (WuWa) FPS boost & lag fix** suite featuring tuned `Engine.ini` performance configs and **OptiScaler FSR 3 Frame Generation** (Unreal Engine 4). Designed to eliminate traversal hitches, fix stuttering in Jinzhou, Rinascita, and Lahai-Roi, prevent ground texture flickering, and double framerates from low-end potato laptops to flagship gaming PCs.
 
 </div>
 
@@ -458,6 +458,18 @@ Ensure you copied the configuration file in its entirety. Every profile in this 
 </details>
 
 <details>
+<summary><b>How do I fix stuttering, FPS drops, and ground texture flickering in Wuthering Waves?</b></summary>
+<br>
+Every preset in this repository applies verified Unreal Engine 4 fixes: asynchronous shader pre-caching eliminates traversal stutters, <code>r.ParallelFrustumCull=1</code> removes camera-turn white flashes, <code>a.URO.Enable=0</code> (Medium and above) restores smooth 60 FPS NPC/character animations in Jinzhou and Rinascita, and keeping <code>r.StaticMeshLODDistanceScale</code> at <code>0.65</code> or higher prevents ground texture flickering.
+</details>
+
+<details>
+<summary><b>How to get 120 FPS or enable Frame Generation on GTX 1650, RTX 2060, RTX 3060, or AMD RX GPUs?</b></summary>
+<br>
+Since Wuthering Waves restricts native DLSS Frame Generation to RTX 40-series cards, use the included <code>07 - ENABLE FRAMEGEN</code> (OptiScaler + FSR 3) package alongside any <code>Engine.ini</code> profile. It unlocks smooth Frame Generation on GTX 16-series, RTX 20/30-series, AMD Radeon RX 6000/7000, and Intel Arc GPUs.
+</details>
+
+<details>
 <summary><b>How do I restore the factory default settings?</b></summary>
 <br>
 Execute <code>Apply-Config.bat</code> and select option <code>7 (RESTORE STOCK)</code>, or copy the contents of <code>engine-stock.ini</code> back into your active <code>Engine.ini</code>.
@@ -511,5 +523,9 @@ Technical proposals, benchmarks, and cvar refinements are welcome! Please open a
 </a>
 
 <p><sub>Enjoying the FPS boost? Fuel future engine updates and optimizations with a cup of coffee! ☕</sub></p>
+
+<br>
+
+<p><sub><b>Search Tags:</b> Wuthering Waves Engine.ini config · WuWa FPS boost · Wuthering Waves lag fix · Low-end / Potato PC optimization · Stutter &amp; Flicker fix · OptiScaler FSR 3 Frame Generation · 120 FPS unlock · Unreal Engine 4 performance tweaks</sub></p>
 
 </div>
